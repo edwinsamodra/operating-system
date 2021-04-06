@@ -20,9 +20,18 @@ void * doSomeThing(void * arg) {
 }
 int main(void) {
     int i;
+    // Don't comment this section if it's Task 1
     for (i = 0; i < 4; i++)
         pthread_create( & (tid[i]), NULL, & doSomeThing, NULL);
     for (i = 0; i < 4; i++)
         pthread_join(tid[i], NULL);
+
+    // Uncommen't this section if it's Task 3
+    /*
+    for(i = 0; i < 4; i++) {
+        pthread_create(&(tid[i]), NULL, &doSomeThing, NULL);
+        pthread_join(tid[i], NULL);
+    }
+    */
     return 0;
 }
