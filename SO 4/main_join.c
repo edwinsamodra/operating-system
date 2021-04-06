@@ -9,7 +9,7 @@ void * thread_function(void * dummyPtr) {
     counter++;
     pthread_mutex_unlock( & mutex1);
 }
-main() {
+void main() {
     pthread_t thread_id[100];
     int i, j;
     for (i = 1; i <= 100; i++) {
