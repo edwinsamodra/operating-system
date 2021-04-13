@@ -8,9 +8,9 @@ int main() {
     remain = n;
 
     for (i = 0; i < n; i++) {
-        printf("Masukkan arrival time untuk Proses P%d :", i + 1);
+        printf("Masukkan arrival time untuk Proses P%d : ", i + 1);
         scanf("%d", & AT[i]);
-        printf("Masukkan burst time untuk Proses P%d :", i + 1);
+        printf("Masukkan burst time untuk Proses P%d : ", i + 1);
         scanf("%d", & b[i]);
         rt[i] = b[i];
     }
